@@ -1,0 +1,147 @@
+﻿
+body {
+    font-size: 16px !important;
+    text-align: center;
+    color: #4d4d4d !important;
+    
+}
+
+.jumbotron {
+    background-image: url("../Images/cosmo.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding:0 !important;
+    
+     /*filter:   brightness(1) sepia(0.2) hue-rotate(90deg);
+    -webkit-filter:   sepia(1) contrast(1.2)hue-rotate(180deg);*/
+}
+
+#background {
+    min-height: 100%;
+    min-width: 1024px;
+	
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+	
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    z-index: -10;
+    
+    opacity: 0.9;
+    filter:   brightness(1) sepia(0.2);
+    -webkit-filter:   brightness(1) sepia(0.2) contrast(1.2) ;
+    
+}
+#jumbo {
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+#logo {
+    height: 150px;
+    /*margin-top: 3%;*/
+   
+}
+
+#logo_jumbo {
+     height: 250px;
+     margin-top:-11%;
+     margin-left: 5%;
+     
+    
+}
+#traka {
+    background-color:rgba(255,255,255,0.5);
+    height:160px;
+    min-width: 100%;
+    margin-top: 20%;
+}
+
+.bordered{
+    border-top: 2px solid #1f6185;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.navbar-default {
+    background-color: rgba(255,255,255,0) !important;
+    border: none !important;
+    font-size: 20px;
+    
+}
+
+.nav>li>a {
+    padding: 15px 40px !important;
+    color: #d4d4d4 !important;
+}
+.nav>li>a:hover {
+    padding: 15px 40px !important;
+    color: #fff !important;
+  
+}
+
+.menu>li>a {
+     padding: 15px 40px !important;
+    color: #1f6185 !important;
+}
+
+.menu>li>a:hover {
+     padding: 15px 40px !important;
+    color: #000 !important;
+}
+
+
+
+h2 {
+    color: #1f6185 !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text {
+    margin-top: 2%;
+    line-height: 1.5;
+}
+
+.text>p {
+    margin-bottom: 2%;
+}
+.vest {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 3px 7px -3px #222;    
+    background-color: #E8E8E8 !important;
+    color: #737373 !important;
+}
+
+.vest>a>h3 {
+    color: #1f6185 !important;
+}
+.vest>a:hover {
+    text-decoration: none;
+}
+#menu-down {
+    margin-top: 15%;
+    font-size:52px;
+    color: #737373 !important;
+}
+
+footer {
+    text-align: center;
+    background-color: #1f6185;
+    color: white;
+    height: 75px;
+    max-width: 100%;
+    padding-top: 1%;
+}
+@media (min-width: 768px) {
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 15% !important;
+}
+}
