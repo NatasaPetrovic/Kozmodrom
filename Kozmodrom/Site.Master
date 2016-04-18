@@ -3,95 +3,63 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head runat="server">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <head runat="server">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%: Page.Title %> - My ASP.NET Application</title>
     	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-		<script src="Scripts/jquery-ui.js"></script>
-		<script src="Scripts/box.js"></script>
-		<link rel="stylesheet" type="text/css" href="main_novi.css">
-		
+		<script src="Scripts/jquery-ui.js"></script> <!-- skripta sa opcijama za skrolovanje header-a -->
+		<script src="Scripts/box.js"></script>		<!-- custom made script --> 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-   
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
-</head>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <webopt:bundlereference runat="server" path="~/Content/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    </head>
 <body>
-    	<header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
-          <div id="jumbo" class="container-fluid" >
-             
-          <!-- <h1 class="display-3">NMC</h1>
-          <h2 class="m-b-3">Neki kul moto</h2><br>-->
-          <div id="traka">
-          </div>
-          <img src="Images/Logo_kosmodrom.gif" id="logo_jumbo" class="img-responsive">
-      
-          <a id="anchor" href="#main"><span id="menu-down" class="glyphicon glyphicon-menu-down"></span></a>
-        </header>
-   <div id="main" class="container-fluid">
-	        <img src="Images/Logo_kosmodrom.gif" id="logo" class="img-responsive center-block">
-		
-		    <div class="container-fluid bordered">
-		        
-		        	<!--------------- Navbar ----------------->
-			<nav class="navbar navbar-default menu">
-  				<div class="container-fluid">
-    				<!-- Brand and toggle get grouped for better mobile display -->
-    				<div class="navbar-header">
-      					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!--<a class="navbar-brand" href="#">Brand</a>-->
-    </div>
+    <!-- Početni header koji se skroluje -->
+    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
+        <div id="jumbo" class="container-fluid">
+            <div id="traka">
+            </div>
+            <img src="Images/Logo_kosmodrom.gif" id="logo_jumbo" class="img-responsive">
+            <a id="anchor" href="#main"><span id="menu-down" class="glyphicon glyphicon-menu-down"></span></a>
+        </div>
+    </header>
+     <!-- Kraj početnog header-a koji se skroluje -->
+    <div id="main" class="container-fluid">
+        <img src="Images/Logo_kosmodrom.gif" id="logo" class="img-responsive center-block">
+        <div class="container-fluid bordered"> <!-- klasa bordered custom made za border navigacije -->
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav menu nav-justified">
-        <li><a href="#main" value="#pocetna">Pocetna <span class="sr-only">(current)</span></a></li>
-                              <li><a href="#main" value="#proizvodi">Proizvodi</a></li>
-                              <li><a href="#main" value="#o_nama">O nama</a></li>
-                              <li><a href="#main" value="#kontakt">Kontakt</a></li>
-                         
-        <!--<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>-->
-      </ul>
-      
-      <!--<ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>-->
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-			
-		</div>
+            <!--------------- Navbar ----------------->
+            <nav class="navbar navbar-default menu">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav menu ">
+                            <li><a href="#main" value="#pocetna">Pocetna <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#main" value="#proizvodi">Proizvodi</a></li>
+                            <li><a href="#main" value="#o_nama">O nama</a></li>
+                            <li><a href="#main" value="#kontakt">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <!-- Kraj navbar-a -->
+        </div>
+        
         <div class="container body-content">
+            <!-- .NET generisan kod koji kaze da ocekuje MainContent stranice koja implementira ovu master stranu -->
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
@@ -99,6 +67,6 @@
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
         </div>
-  </div>
+    </div>
 </body>
 </html>
